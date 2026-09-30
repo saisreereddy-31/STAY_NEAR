@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayNear - Find Your Perfect Escape</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo"><span>Stay</span>Near</a>
+
+    <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#stays">Stays</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <div class="auth-buttons">
+        <button class="signup-btn" id="openSignup">Sign Up</button>
+        <button class="signin-btn" id="openSignin">Sign In</button>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-left">
+        <div class="hero-badge">✦ PREMIUM STAYS AROUND THE WORLD</div>
+
+        <h1>
+            Find your
+            <span>perfect</span>
+            escape.
+        </h1>
+
+        <p>
+            Discover beautiful homes, unique stays and unforgettable
+            places made for the way you travel.
+        </p>
+
+        <div class="app-buttons">
+            <a href="#" class="app-button">
+                <span class="apple-icon"></span>
+                <div>
+                    <small>Download on the</small>
+                    <strong>App Store</strong>
+                </div>
+            </a>
+
+            <a href="#" class="app-button">
+                <span class="play-icon">▶</span>
+                <div>
+                    <small>GET IT ON</small>
+                    <strong>Google Play</strong>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="booking-glass">
+        <div class="booking-title">
+            <h2>Find your stay</h2>
+            <p>Where would you like to go?</p>
+        </div>
+
+        <div class="booking-field">
+            <label>Destination</label>
+
+            <div class="input-wrapper">
+                <span>⌖</span>
+                <input type="text" id="locationInput" placeholder="Search destination">
+            </div>
+        </div>
+
+        <div class="booking-row">
+            <div class="booking-field">
+                <label>Check in</label>
+                <input type="date" id="checkIn">
+            </div>
+
+            <div class="booking-field">
+                <label>Check out</label>
+                <input type="date" id="checkOut">
+            </div>
+        </div>
+
+        <div class="booking-field">
+            <label>Guests</label>
+
+            <div class="input-wrapper">
+                <span>♙</span>
+                <button class="guest-button" id="guestButton">2 Guests</button>
+            </div>
+        </div>
+
+        <button class="booking-search" id="searchButton">
+            <span>Search Stays</span>
+            <b>→</b>
+        </button>
+    </div>
+
+    <div class="hero-stats">
+        <div>
+            <strong>12K+</strong>
+            <span>Unique Stays</span>
+        </div>
+
+        <div>
+            <strong>48+</strong>
+            <span>Destinations</span>
+        </div>
+
+        <div>
+            <strong>4.9</strong>
+            <span>Guest Rating</span>
+        </div>
+    </div>
+</section>
+
+<section class="section explore" id="explore">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">EXPLORE YOUR WAY</span>
+            <h2>Find your kind of <span>place.</span></h2>
+        </div>
+
+        <p>
+            From peaceful retreats to vibrant city escapes,
+            discover a stay that matches your mood.
+        </p>
+    </div>
+
+    <div class="category-grid">
+        <div class="category-card large-card">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1400&q=85">
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>01</span>
+                <h3>Nature Escapes</h3>
+                <p>Wake up somewhere beautiful.</p>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=85">
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>02</span>
+                <h3>City Life</h3>
+                <p>Stay close to everything.</p>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85">
+            <div class="category-overlay"></div>
+
+            <div class="category-content">
+                <span>03</span>
+                <h3>Beach Days</h3>
+                <p>Slow down by the sea.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section stays" id="stays">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">HANDPICKED FOR YOU</span>
+            <h2>Places worth <span>staying.</span></h2>
+        </div>
+
+        <button class="outline-button">Explore All →</button>
+    </div>
+
+    <div class="property-grid">
+
+        <article class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85">
+                <button class="favorite">♡</button>
+                <span class="property-tag">Guest Favourite</span>
+            </div>
+
+            <div class="property-info">
+                <div class="property-heading">
+                    <h3>Modern Glass Villa</h3>
+                    <span>★ 4.9</span>
+                </div>
+
+                <p>Hyderabad, India</p>
+                <small>City view · Private pool · Wi-Fi</small>
+
+                <div class="property-price">
+                    <strong>₹4,200</strong>
+                    <span>/ night</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=85">
+                <button class="favorite">♡</button>
+                <span class="property-tag">Top Rated</span>
+            </div>
+
+            <div class="property-info">
+                <div class="property-heading">
+                    <h3>Mountain Hideaway</h3>
+                    <span>★ 4.8</span>
+                </div>
+
+                <p>Ooty, India</p>
+                <small>Mountain view · Fireplace · Balcony</small>
+
+                <div class="property-price">
+                    <strong>₹3,100</strong>
+                    <span>/ night</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=85">
+                <button class="favorite">♡</button>
+                <span class="property-tag">New</span>
+            </div>
+
+            <div class="property-info">
+                <div class="property-heading">
+                    <h3>Oceanfront Retreat</h3>
+                    <span>★ 4.9</span>
+                </div>
+
+                <p>Goa, India</p>
+                <small>Beach access · Sunset view · Breakfast</small>
+
+                <div class="property-price">
+                    <strong>₹5,600</strong>
+                    <span>/ night</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85">
+                <button class="favorite">♡</button>
+                <span class="property-tag">Luxury</span>
+            </div>
+
+            <div class="property-info">
+                <div class="property-heading">
+                    <h3>Urban Luxury Suite</h3>
+                    <span>★ 4.7</span>
+                </div>
+
+                <p>Bengaluru, India</p>
+                <small>City centre · Workspace · Wi-Fi</small>
+
+                <div class="property-price">
+                    <strong>₹2,800</strong>
+                    <span>/ night</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85">
+                <button class="favorite">♡</button>
+                <span class="property-tag">Peaceful</span>
+            </div>
+
+            <div class="property-info">
+                <div class="property-heading">
+                    <h3>Forest Cabin</h3>
+                    <span>★ 4.9</span>
+                </div>
+
+                <p>Coorg, India</p>
+                <small>Forest view · Garden · Fireplace</small>
+
+                <div class="property-price">
+                    <strong>₹3,700</strong>
+                    <span>/ night</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="property-card">
+            <div class="property-image">
+                <img src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=1200&q=85">
+                <button class="favorite">♡</button>
+                <span class="property-tag">Popular</span>
+            </div>
+
+            <div class="property-info">
+                <div class="property-heading">
+                    <h3>Private Pool Villa</h3>
+                    <span>★ 4.8</span>
+                </div>
+
+                <p>Pondicherry, India</p>
+                <small>Private pool · Garden · Kitchen</small>
+
+                <div class="property-price">
+                    <strong>₹4,800</strong>
+                    <span>/ night</span>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="experience" id="about">
+    <div class="experience-image">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=85">
+    </div>
+
+    <div class="experience-overlay"></div>
+
+    <div class="experience-content">
+        <span class="eyebrow">THE STAYNEAR EXPERIENCE</span>
+
+        <h2>
+            Don't just
+            <span>visit.</span>
+            Feel the place.
+        </h2>
+
+        <p>
+            We believe a great stay is more than four walls.
+            It's the morning view, the quiet coffee and the
+            memories you take home.
+        </p>
+
+        <button class="white-button">Discover More →</button>
+    </div>
+</section>
+
+<section class="section purpose">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">TRAVEL WITH PURPOSE</span>
+            <h2>What brings you <span>here?</span></h2>
+        </div>
+    </div>
+
+    <div class="purpose-grid">
+        <button class="purpose-card">
+            <span>🎓</span>
+            <h3>Study</h3>
+            <p>Quiet and affordable places.</p>
+        </button>
+
+        <button class="purpose-card">
+            <span>💼</span>
+            <h3>Work</h3>
+            <p>Connected and convenient.</p>
+        </button>
+
+        <button class="purpose-card">
+            <span>👨‍👩‍👧</span>
+            <h3>Family</h3>
+            <p>Comfort for everyone.</p>
+        </button>
+
+        <button class="purpose-card">
+            <span>🌴</span>
+            <h3>Vacation</h3>
+            <p>Relax and explore.</p>
+        </button>
+    </div>
+</section>
+
+<section class="section reviews" id="reviews">
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">REAL EXPERIENCES</span>
+            <h2>Loved by <span>travellers.</span></h2>
+        </div>
+    </div>
+
+    <div class="review-grid">
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "StayNear made finding our weekend stay incredibly
+                easy. The villa was even better than the pictures."
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">A</div>
+
+                <div>
+                    <strong>Ananya</strong>
+                    <span>Hyderabad</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "Beautiful properties, simple booking and a really
+                smooth experience from start to finish."
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">R</div>
+
+                <div>
+                    <strong>Rahul</strong>
+                    <span>Bengaluru</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "The mountain stay we booked was peaceful, clean
+                and exactly what we needed."
+            </p>
+
+            <div class="review-user">
+                <div class="avatar">S</div>
+
+                <div>
+                    <strong>Sneha</strong>
+                    <span>Chennai</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-logo"><span>Stay</span>Near</div>
+
+    <p>Find somewhere worth remembering.</p>
+
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#explore">Explore</a>
+        <a href="#stays">Stays</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+    </div>
+
+    <small>© 2026 StayNear. Crafted for better journeys.</small>
+</footer>
+
+<div class="modal" id="signupModal">
+    <div class="modal-box">
+
+        <button class="close-modal" id="closeSignup">×</button>
+
+        <div class="modal-logo"><span>Stay</span>Near</div>
+
+        <h2>Create your account</h2>
+
+        <p>Start discovering beautiful stays.</p>
+
+        <form id="signupForm">
+
+            <input type="text" id="signupName" placeholder="Full Name" required>
+
+            <input type="email" id="signupEmail" placeholder="Email Address" required>
+
+            <input type="password" id="signupPassword" placeholder="Password" required>
+
+            <input type="password" id="signupConfirm" placeholder="Confirm Password" required>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+        <p class="switch-text">
+            Already have an account?
+            <button id="switchToSignin">Sign In</button>
+        </p>
+
+    </div>
+</div>
+
+<div class="modal" id="signinModal">
+    <div class="modal-box">
+
+        <button class="close-modal" id="closeSignin">×</button>
+
+        <div class="modal-logo"><span>Stay</span>Near</div>
+
+        <h2>Welcome back</h2>
+
+        <p>Sign in to continue your journey.</p>
+
+        <form id="signinForm">
+
+            <input type="email" id="signinEmail" placeholder="Email Address" required>
+
+            <input type="password" id="signinPassword" placeholder="Password" required>
+
+            <button type="submit">Sign In</button>
+
+        </form>
+
+        <p class="switch-text">
+            Don't have an account?
+            <button id="switchToSignup">Sign Up</button>
+        </p>
+
+    </div>
+</div>
+
+<div class="toast" id="toast">
+    <span>✓</span>
+    <p id="toastMessage">Success</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
